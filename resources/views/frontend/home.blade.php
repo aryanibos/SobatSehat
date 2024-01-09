@@ -186,7 +186,7 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">Contuct Us</p>
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Contact Us</p>
                     <h1 class="mb-4">Hubungi Kami </h1>
                     <p class="mb-4">Sebelum konsultasi mari kami bantu apa yang kalian butuhkan</p>
                     <div class="bg-light rounded d-flex align-items-center p-5 mb-4">

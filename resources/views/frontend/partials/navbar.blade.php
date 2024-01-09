@@ -86,7 +86,7 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
                 <a href="{{ asset('about') }}" class="nav-item nav-link">About</a>
-                <a href="{{ asset('frontend') }}/service.html" class="nav-item nav-link">Berita</a>
+                <a href="{{ asset('berita') }}" class="nav-item nav-link">Berita</a>
                 <div class="nav-item dropdown">
                     <a href="{{ asset('frontend') }}/#" class="nav-link dropdown-toggle"
                         data-bs-toggle="dropdown">Pages</a>
