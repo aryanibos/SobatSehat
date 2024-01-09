@@ -84,8 +84,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="{{ asset('frontend') }}/index.html" class="nav-item nav-link active">Home</a>
-                <a href="{{ asset('frontend') }}/about.html" class="nav-item nav-link">About</a>
+                <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+                <a href="{{ asset('about') }}" class="nav-item nav-link">About</a>
                 <a href="{{ asset('frontend') }}/service.html" class="nav-item nav-link">Berita</a>
                 <div class="nav-item dropdown">
                     <a href="{{ asset('frontend') }}/#" class="nav-link dropdown-toggle"

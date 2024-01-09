@@ -188,16 +188,14 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="d-inline-block border rounded-pill py-1 px-4">Contuct Us</p>
                     <h1 class="mb-4">Hubungi Kami </h1>
-                    <p class="mb-4">
-                        Hubungi kami bila ada hal-hal yang kurang di pahami dan jangan sungkan untuk bertanya
-                    </p>
+                    <p class="mb-4">Sebelum konsultasi mari kami bantu apa yang kalian butuhkan</p>
                     <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
                             style="width: 55px; height: 55px;">
                             <i class="fa fa-phone-alt text-primary"></i>
                         </div>
                         <div class="ms-4">
-                            <p class="mb-2">Call Us Now</p>
+                            <p class="mb-2">Hubungi Kami</p>
                             <h5 class="mb-0">+62857 8824 1715</h5>
                         </div>
                     </div>
@@ -207,8 +205,8 @@
                             <i class="fa fa-envelope-open text-primary"></i>
                         </div>
                         <div class="ms-4">
-                            <p class="mb-2">Mail Us Now</p>
-                            <h5 class="mb-0">sobatsehat@gmail.com</h5>
+                            <p class="mb-2">Email Kami</p>
+                            <h5 class="mb-0">Alpukat6_RPL@<br>gmail.com</h5>
                         </div>
                     </div>
                 </div>
@@ -216,44 +214,32 @@
                     <div class="bg-light rounded h-100 d-flex align-items-center p-5">
                         <form>
                             <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name"
-                                        style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email"
-                                        style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile"
-                                        style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Choose Problem</option>
-                                        <option value="1">Informasi Jadwal</option>
-                                        <option value="2">Informasi Kegiatan</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control border-0 datetimepicker-input"
-                                            placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker"
-                                            style="height: 55px;">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="nama" placeholder="Masukan Nama Anda">
+                                        <label for="nama">Nama</label>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control border-0 datetimepicker-input"
-                                            placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker"
-                                            style="height: 55px;">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Masukan Email Anda">
+                                        <label for="email">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" rows="5" placeholder="Describe your problem"></textarea>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="phone" placeholder="Masukan nomor telephone anda">
+                                        <label for="phone">Nomor Telephone</label>
+                                    </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Kirim</button>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Apa yang bisa kami bantu?" id="keluhan" style="height: 100px"></textarea>
+                                        <label for="keluhan">Apa yang bisa kami bantu?</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                                 </div>
                             </div>
                         </form>
