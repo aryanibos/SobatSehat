@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [FrontendController::class, 'index'])->name('home');
+Route::get('saran_dukungan', [FrontendController::class, 'saranDukungan'])->name('saran_dukungan');

@@ -93,7 +93,7 @@
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
                         <a href="{{ asset('frontend') }}/feature.html" class="dropdown-item">Jadwal & Lokasi
                             Kegiatan</a>
-                        <a href="{{ asset('frontend') }}/team.html" class="dropdown-item">Saran & Dukungan</a>
+                        <a href="{{ route('saran_dukungan') }}" class="dropdown-item">Saran & Dukungan</a>
                     </div>
                 </div>
                 <a href="{{ asset('frontend') }}/contact.html" class="nav-item nav-link">Contact</a>

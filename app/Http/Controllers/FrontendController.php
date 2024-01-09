@@ -10,4 +10,9 @@ class FrontendController extends Controller
     {
         return view('frontend.home');
     }
+    public function saranDukungan()
+    {
+        return view('frontend.saran_dukungan');
+    }
+
 }
