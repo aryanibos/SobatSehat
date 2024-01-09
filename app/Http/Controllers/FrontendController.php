@@ -25,5 +25,9 @@ class FrontendController extends Controller
     {
         return view('frontend.berita');
     }
-    
+
+    public function jadwalLokasi()
+    {
+        return view('frontend.jadwal_lokasi');
+    }
 }

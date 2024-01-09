@@ -76,7 +76,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
-        <a href="{{ asset('frontend') }}/index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="{{ route('home') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="{{ asset('frontend') }}/img/logo.png" alt="" width="150">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -91,7 +91,7 @@
                     <a href="{{ asset('frontend') }}/#" class="nav-link dropdown-toggle"
                         data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="{{ asset('frontend') }}/feature.html" class="dropdown-item">Jadwal & Lokasi
+                        <a href="{{ route('jadwal_lokasi') }}" class="dropdown-item">Jadwal & Lokasi
                             Kegiatan</a>
                         <a href="{{ asset('frontend') }}/team.html" class="dropdown-item">Saran & Dukungan</a>
                     </div>
