@@ -16,6 +16,35 @@
     </div>
     <!-- Page Header End -->
 
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end"
+                            src="{{ asset('frontend') }}/img/dokter-covid.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4"
+                        style="background-color: #5ce1e6; color: white;">// BERITA TERPOPULER //</p>
+                    <h1 class="mb-4">{{ $berita['judul'] }}</h1>
+                    <small>
+                        <i class="fa fa-user-circle"></i> {{ $berita->user->name }}
+                        <i class="fa fa-calendar" style="margin-left: 5px"></i> {{ $berita->created_at->format('d F Y') }}
+                        <i class="fa fa-list" style="margin-left: 5px"></i> {{ $berita['kategori'] }}
+                    </small>
+                    <p style="text-align: justify; color: black;">
+                        &nbsp;&nbsp;&nbsp;{!! $berita['isi'] !!}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
     <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">

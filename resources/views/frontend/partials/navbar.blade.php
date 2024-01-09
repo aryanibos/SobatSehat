@@ -76,7 +76,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
-        <a href="{{ route('home') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="{{ route('awal') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="{{ asset('frontend') }}/img/logo.png" alt="" width="150">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -84,7 +84,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+                <a href="{{ route('awal') }}" class="nav-item nav-link ">Home</a>
                 <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
                 <a href="{{ route('news') }}" class="nav-item nav-link">Berita</a>
                 <div class="nav-item dropdown">
@@ -97,7 +97,7 @@
                 </div>
                 <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Login<i
+            <a href="/loreg" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Login<i
                     class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>

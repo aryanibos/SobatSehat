@@ -9,7 +9,11 @@
                 <div class="row g-4">
                     <div class="col-sm-4">
                         <div class="border-start border-light ps-4">
-                            <h2 class="text-white mb-1" data-toggle="counter-up">167</h2>
+                            <h2 class="text-white mb-1" data-toggle="counter-up">
+                                @if ($count_jadwals <= 10)
+                                    0{{ $count_jadwals }}
+                                @endif
+                            </h2>
                             <p class="text-light mb-0">Jadwal Kegiatan</p>
                         </div>
                     </div>
@@ -49,7 +53,8 @@
                     <p class="d-inline-block border rounded-pill py-1 px-4"
                         style="background-color: #5ce1e6; color: white;">Tentang Kami</p>
                     <h1 class="mb-4">Mengapa Anda Harus Mempercayai Kami? Kenali Tentang Kami</h1>
-                    <p style="text-align: justify; color: black;">Aplikasi Sobat Sehat adalah aplikasi inovatif yang
+                    <p style="text-align: justify; color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aplikasi Sobat Sehat adalah
+                        aplikasi inovatif yang
                         dirancang untuk memberikan pelayanan kesehatan masyarakat yang bertujuan untuk meningkatkan
                         kesadaran dan pemahaman masyarakat tentang pentingnya menjaga kesehatan. Aplikasi ini juga
                         memudahkan untuk mengakses berbagai informasi-informasi yang lengkap terkait kesehatan dan relevan
@@ -78,39 +83,18 @@
                 <h1>Jadwal & Kegiatan</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                            style="width: 65px; height: 65px;">
-                            <i class="fa fa-heartbeat text-primary fs-4"></i>
+                @foreach ($jadwals as $item)
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <img src="{{ asset('upload/gambar-jadwal/' . $item['gambar']) }}" width="250px" alt="">
+                            <h4 class="mb-3">{{ $item['nama_acara'] }}</h4>
+                            <p>Alamat : {{ $item->lokasi->nama_lokasi }} <br>
+                                Waktu : 08:00 WIB - SELESAI <br>
+                                Kategori : {{ $item['kategori'] }}
+                            </p>
                         </div>
-                        <h4 class="mb-3">Vaksinasi Ebola</h4>
-                        <p class="mb-4">Bertujuan agar mesyarakat terhindar dari virus ebola</p>
-                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                            style="width: 65px; height: 65px;">
-                            <i class="fa fa-x-ray text-primary fs-4"></i>
-                        </div>
-                        <h4 class="mb-3">Konsutasi Kesehatan Balita</h4>
-                        <p class="mb-4">Agar anak balita memiliki jaminan kesehatan yang baik kedepan</p>
-                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                            style="width: 65px; height: 65px;">
-                            <i class="fa fa-brain text-primary fs-4"></i>
-                        </div>
-                        <h4 class="mb-3">Pengecekan gula darah, asam urat, kolesterol</h4>
-                        <p class="mb-4">Agar dapat mengetahui seberapa besar hal GDAC yang ada pada tubuh</p>
-                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -125,56 +109,23 @@
                     Berita</p>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{ asset('frontend') }}/img/corona.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Virus Corona</h5>
-                            <p class="text-primary">Virus Corona Meningkat Lagi Di Singapura</p>
-                            <div class="team-social text-center">
+                @foreach ($beritas as $item)
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative rounded overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="{{ asset('upload/gambar-berita/' . $item['gambar']) }}"
+                                    alt="">
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <a href="{{ route('detail-berita', $item['id']) }}">
+                                    <h5>{{ $item['judul'] }}</h5>
+                                </a>
+                                <div class="team-social text-center">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{ asset('frontend') }}/img/corona.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Virus Corona</h5>
-                            <p class="text-primary">Virus Corona Meningkat Lagi Di Singapura</p>
-                            <div class="team-social text-center">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{ asset('frontend') }}/img/corona.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Virus Corona</h5>
-                            <p class="text-primary">Virus Corona Meningkat Lagi Di Singapura</p>
-                            <div class="team-social text-center">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{ asset('frontend') }}/img/corona.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Virus Corona</h5>
-                            <p class="text-primary">Virus Corona Meningkat Lagi Di Singapura</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -216,19 +167,22 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="nama" placeholder="Masukan Nama Anda">
+                                        <input type="text" class="form-control" id="nama"
+                                            placeholder="Masukan Nama Anda">
                                         <label for="nama">Nama</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Masukan Email Anda">
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Masukan Email Anda">
                                         <label for="email">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="phone" placeholder="Masukan nomor telephone anda">
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="Masukan nomor telephone anda">
                                         <label for="phone">Nomor Telephone</label>
                                     </div>
                                 </div>
