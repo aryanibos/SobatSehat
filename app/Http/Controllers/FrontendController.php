@@ -2,22 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Berita;
+use App\Models\Jadwal;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
     public function index()
     {
-        return view('frontend.home');
+        $jadwals = Jadwal::all();
+        $beritas = Berita::all();
+        return view('frontend.home', compact('jadwals', 'beritas'));
     }
-<<<<<<< HEAD
-    public function saranDukungan()
-    {
-        return view('frontend.saran_dukungan');
-    }
-
-=======
-
     public function contact()
     {
         return view('frontend.contact');
@@ -37,5 +33,4 @@ class FrontendController extends Controller
     {
         return view('frontend.jadwal_lokasi');
     }
->>>>>>> 163d6fc2f54ebf79651f549a11c50a92f2ff94ba
 }

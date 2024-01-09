@@ -85,11 +85,10 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
-                <a href="{{ asset('about') }}" class="nav-item nav-link">About</a>
-                <a href="{{ asset('berita') }}" class="nav-item nav-link">Berita</a>
+                <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
+                <a href="{{ route('news') }}" class="nav-item nav-link">Berita</a>
                 <div class="nav-item dropdown">
-                    <a href="{{ asset('frontend') }}/#" class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
                         <a href="{{ route('jadwal_lokasi') }}" class="dropdown-item">Jadwal & Lokasi
                             Kegiatan</a>
