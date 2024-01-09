@@ -1,4 +1,5 @@
 @extends('frontend.appMain')
+
 @section('content')
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
@@ -22,9 +23,10 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="img/ilustrasi_doketr.jpg" alt="">
-                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="img/gra" alt=""
-                            style="margin-top: -25%;">
+                        <img class="img-fluid rounded w-75 align-self-end"
+                            src="{{ asset('frontend') }}/img/ilustrasi_doketr.jpg" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="{{ asset('frontend') }}/img/grafis.png"
+                            alt="" style="margin-top: -25%;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -52,18 +54,18 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded-pill py-1 px-4">Doctors</p>
-                <h1>Our Experience Doctors</h1>
+                <p class="d-inline-block border rounded-pill py-1 px-4">Tenaga Ahli</p>
+                <h1>Tenaga Ahli Kami Yang Memiliki Sejuta Pengalaman</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('frontend') }}/img/team-1.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
-                            <h5>Doctor Name</h5>
-                            <p class="text-primary">Department</p>
+                            <h5>Anastasya Adeline</h5>
+                            <p class="text-primary">Ahli Gizi Anak</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -75,11 +77,11 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('frontend') }}/img/team-2.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
-                            <h5>Doctor Name</h5>
-                            <p class="text-primary">Department</p>
+                            <h5>Asep Suherman</h5>
+                            <p class="text-primary">Ahli Penyakit Dalam</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -91,11 +93,11 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('frontend') }}/img/team-3.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
-                            <h5>Doctor Name</h5>
-                            <p class="text-primary">Department</p>
+                            <h5>Siti Ambar</h5>
+                            <p class="text-primary">Ahli Saraf</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -107,15 +109,16 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('frontend') }}/img/team-4.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
-                            <h5>Doctor Name</h5>
-                            <p class="text-primary">Department</p>
+                            <h5>Charles Didit</h5>
+                            <p class="text-primary">Ahli Spesialis THT</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                >>>>>>> b05431efe5c9d341212fc58496e51c7d83212e54
                             </div>
                         </div>
                     </div>

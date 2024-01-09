@@ -23,6 +23,12 @@ use Illuminate\Support\Facades\Route;
 
 // Halaman Home
 Route::get('/', [FrontendController::class, 'index'])->name('home');
+
+Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
+Route::get('/about', [FrontendController::class, 'about'])->name('about');
+Route::get('/berita', [FrontendController::class, 'berita'])->name('berita');
+Route::get('/jadwal_lokasi', [FrontendController::class, 'jadwalLokasi'])->name('jadwal_lokasi');
+Route::get('saran_dukungan', [FrontendController::class, 'saranDukungan'])->name('saran_dukungan');
 Route::get('/about', [FrontendController::class, 'about'])->name('about');
 
 

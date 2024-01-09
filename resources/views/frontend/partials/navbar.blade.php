@@ -76,7 +76,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
-        <a href="{{ asset('frontend') }}/index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="{{ route('home') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="{{ asset('frontend') }}/img/logo.png" alt="" width="150">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -84,19 +84,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="{{ asset('frontend') }}/index.html" class="nav-item nav-link active">Home</a>
-                <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
-                <a href="{{ asset('frontend') }}/service.html" class="nav-item nav-link">Berita</a>
+                <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+                <a href="{{ asset('about') }}" class="nav-item nav-link">About</a>
+                <a href="{{ asset('berita') }}" class="nav-item nav-link">Berita</a>
                 <div class="nav-item dropdown">
                     <a href="{{ asset('frontend') }}/#" class="nav-link dropdown-toggle"
                         data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="{{ asset('frontend') }}/feature.html" class="dropdown-item">Jadwal & Lokasi
+                        <a href="{{ route('jadwal_lokasi') }}" class="dropdown-item">Jadwal & Lokasi
                             Kegiatan</a>
-                        <a href="{{ asset('frontend') }}/team.html" class="dropdown-item">Saran & Dukungan</a>
+                        <a href="{{ route('saran_dukungan') }}" class="dropdown-item">Saran & Dukungan</a>
                     </div>
                 </div>
-                <a href="{{ asset('frontend') }}/contact.html" class="nav-item nav-link">Contact</a>
+                <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
             </div>
             <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Login<i
                     class="fa fa-arrow-right ms-3"></i></a>
